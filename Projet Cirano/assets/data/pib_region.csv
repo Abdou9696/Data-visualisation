@@ -1,0 +1,25 @@
+type_territoire,region,part_PIB_Quebec,pib_par_habitant,ecart_PIB_par_habitant_Quebec,pib,population
+province,Le Québec,100.0,42507,s.o.,351088000,8259452
+région administrative,Abitibi-Témiscamingue,2.0,46358,9.1,6862131,148024
+région administrative,Bas-Saint-Laurent,1.9,33386,-21.5,6681256,200120
+région administrative,Capitale-Nationale,10.0,47948,12.8,35147148,733024
+région administrative,Centre-du-Québec,2.4,35380,-16.8,8570631,242245
+région administrative,Chaudière-Appalaches,4.5,37007,-12.9,15637007,422546
+région administrative,Côte-Nord,1.9,70475,65.8,6609594,93787
+région administrative,Nord-du-Québec,1.0,76429,79.8,3421343,44765
+région administrative,Estrie,3.2,34853,-18.0,11204095,321464
+région administrative,Gaspésie–Îles-de-la-Madeleine,0.8,31967,-24.8,2951590,92333
+région administrative,Lanaudière,3.6,25126,-40.9,12504720,497684
+région administrative,Laurentides,5.4,31853,-25.1,18925492,594160
+région administrative,Laval,4.1,33644,-20.9,14314907,425481
+région administrative,Mauricie,2.5,32516,-23.5,8703343,267666
+région administrative,Montérégie,15.1,34812,-18.1,53004465,1522581
+région administrative,Montréal,35.2,62134,46.2,123686039,1990637
+région administrative,Outaouais,3.5,31672,-25.5,12200891,385222
+région métropolitaine,Région métropolitaine de Gatineau,3.1,33300,-21.7,10948644,328784
+région métropolitaine,Région métropolitaine de Montréal,54.6,47328,11.3,191660514,4049632
+région métropolitaine,Région métropolitaine de Québec,11.1,48788,14.8,39093277,801292
+région métropolitaine,Région métropolitaine de Saguenay,1.9,40663,-4.3,6505944,159996
+région métropolitaine,Région métropolitaine de Sherbrooke,2.2,36834,-13.3,7856606,213298
+région métropolitaine,Région métropolitaine de Trois-Rivières,1.8,40662,-4.3,6376254,156812
+région métropolitaine,Saguenay–Lac-Saint-Jean,3.0,38397,-9.7,10663346,277713

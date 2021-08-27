@@ -1,0 +1,59 @@
+.scatter_plot_anim_ctrl
+{
+    margin: auto;
+    width: 350px;
+    border: 3px solid green;
+    padding: 10px 0px;
+}
+
+.btn_scatter_plt{
+    display:inline-block;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    width: 57.5px;
+    padding: 15px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#btn_previous
+{
+    display:inline-block;
+    border: 1px;
+    margin-left: 20px; 
+}
+
+#btn_play
+{
+    display:inline-block;
+    border: 1px; 
+}
+
+#btn_pause
+{
+    display:inline-block;
+    border: 1px; 
+}
+
+#btn_next
+{
+    display:inline-block;
+    border: 1px; 
+}
+
+.disabled_ctrl
+{
+    opacity: 0.50;
+    cursor: not-allowed;
+}
+
+.hidden_ctrl
+{
+    display: none;
+}
+

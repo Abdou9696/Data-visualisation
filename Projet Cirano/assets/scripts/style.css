@@ -1,0 +1,20 @@
+
+.axis g {
+  fill: none;
+  stroke-width: 1.5;
+  opacity: 0.4;
+}
+
+.axis:hover g {
+  opacity: 1;
+}
+
+.parallel path {
+  fill: none;
+  opacity: 0.8;
+}
+
+.y-axis-labels{
+  text-anchor: middle;
+  fill: black;
+}

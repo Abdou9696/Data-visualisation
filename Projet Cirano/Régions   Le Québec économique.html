@@ -1,0 +1,1011 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="Régions" href="https://qe.cirano.qc.ca/taxonomy/term/270/all/feed">
+    <link rel="shortcut icon" href="https://qe.cirano.qc.ca/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="generator" content="Drupal 7 (http://drupal.org)">
+    <link rel="canonical" href="https://qe.cirano.qc.ca/theme/regions">
+    <link rel="shortlink" href="https://qe.cirano.qc.ca/taxonomy/term/270">
+    <title>Régions | Le Québec économique</title>
+    <link rel="stylesheet" href="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/style.css">
+    <style type="text/css" media="all">
+        @import url("https://qe.cirano.qc.ca/modules/system/system.base.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/system/system.menus.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/system/system.messages.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/system/system.theme.css?q3sw1i");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/contrib/date/date_api/date.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/field/theme/field.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/node/node.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/custom/qceco_graph_download/qceco_graph_download.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/custom/qceco_table/css/qceco_table.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/search/search.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/custom/sym_admin_menu/sym_admin_menu.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/custom/sym_indicator/sym_indicator.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/custom/sym_inspector/sym_inspector.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/modules/user/user.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/contrib/views/css/views.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/contrib/ckeditor/css/ckeditor.css?q3sw1i");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://qe.cirano.qc.ca/sites/all/modules/contrib/ctools/css/ctools.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/libraries/fontawesome/css/font-awesome.css?q3sw1i");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://qe.cirano.qc.ca/sites/all/themes/qceco/css/vendor/foundation.min.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/themes/qceco/css/vendor/jquery.mmenu.all.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/themes/qceco/css/vendor/jquery.mmenu.fullscreen.css?q3sw1i");
+        @import url("https://qe.cirano.qc.ca/sites/all/themes/qceco/css/qceco.css?q3sw1i");
+    </style>
+    <link rel="stylesheet" href="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/scatter_plot_style.css">
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/jquery-1.js"></script>
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+            //--><!]]>
+    </script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/jquery-extend-3.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/jquery.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/drupal.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/qceco_chart.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/qceco_statistical_data.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/qceco_table.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/qceco_data_mapping.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/sym_admin_menu.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/sym_indicator.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/sym_inspector.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/fr_wPMvGMaUlGuZT3KOu5aMFZGE4ZJOY01SXJTkOwwMVuw.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/foundation.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/jquery_002.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/qceco.js"></script>
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        jQuery.extend(Drupal.settings, {
+            "basePath": "\/",
+            "pathPrefix": "",
+            "ajaxPageState": {
+                "theme": "qceco",
+                "theme_token": "m18FkMIJC_fM3uSJ-J_PpXckK021uLqi5vlp1lM5gSI",
+                "js": {
+                    "\/\/code.jquery.com\/jquery-1.8.3.min.js": 1,
+                    "0": 1,
+                    "misc\/jquery-extend-3.4.0.js": 1,
+                    "misc\/jquery.once.js": 1,
+                    "misc\/drupal.js": 1,
+                    "sites\/all\/modules\/custom\/qceco_chart\/js\/qceco_chart.js": 1,
+                    "sites\/all\/modules\/custom\/qceco_statistical_data\/js\/qceco_statistical_data.js": 1,
+                    "sites\/all\/modules\/custom\/qceco_table\/js\/qceco_table.js": 1,
+                    "sites\/all\/modules\/custom\/qceco_table\/js\/qceco_data_mapping.js": 1,
+                    "sites\/all\/modules\/custom\/sym_admin_menu\/sym_admin_menu.js": 1,
+                    "sites\/all\/modules\/custom\/sym_indicator\/sym_indicator.js": 1,
+                    "sites\/all\/modules\/custom\/sym_inspector\/sym_inspector.js": 1,
+                    "public:\/\/languages\/fr_wPMvGMaUlGuZT3KOu5aMFZGE4ZJOY01SXJTkOwwMVuw.js": 1,
+                    "sites\/all\/themes\/qceco\/js\/vendor\/foundation.min.js": 1,
+                    "sites\/all\/themes\/qceco\/js\/vendor\/jquery.mmenu.all.min.js": 1,
+                    "sites\/all\/themes\/qceco\/js\/qceco.js": 1
+                },
+                "css": {
+                    "modules\/system\/system.base.css": 1,
+                    "modules\/system\/system.menus.css": 1,
+                    "modules\/system\/system.messages.css": 1,
+                    "modules\/system\/system.theme.css": 1,
+                    "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1,
+                    "sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+                    "modules\/field\/theme\/field.css": 1,
+                    "modules\/node\/node.css": 1,
+                    "sites\/all\/modules\/custom\/qceco_graph_download\/qceco_graph_download.css": 1,
+                    "sites\/all\/modules\/custom\/qceco_table\/css\/qceco_table.css": 1,
+                    "modules\/search\/search.css": 1,
+                    "sites\/all\/modules\/custom\/sym_admin_menu\/sym_admin_menu.css": 1,
+                    "sites\/all\/modules\/custom\/sym_indicator\/sym_indicator.css": 1,
+                    "sites\/all\/modules\/custom\/sym_inspector\/sym_inspector.css": 1,
+                    "modules\/user\/user.css": 1,
+                    "sites\/all\/modules\/contrib\/views\/css\/views.css": 1,
+                    "sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css": 1,
+                    "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1,
+                    "sites\/all\/libraries\/fontawesome\/css\/font-awesome.css": 1,
+                    "sites\/all\/themes\/qceco\/css\/vendor\/foundation.min.css": 1,
+                    "sites\/all\/themes\/qceco\/css\/vendor\/jquery.mmenu.all.css": 1,
+                    "sites\/all\/themes\/qceco\/css\/vendor\/jquery.mmenu.fullscreen.css": 1,
+                    "sites\/all\/themes\/qceco\/css\/qceco.css": 1
+                }
+            },
+            "urlIsAjaxTrusted": {
+                "\/recherche": true
+            }
+        });
+        //--><!]]>
+    </script>
+    <meta class="foundation-mq">
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-taxonomy page-taxonomy-term page-taxonomy-term- page-taxonomy-term-270 i18n-fr page-taxonomy-vocabulary-themes fixed-header">
+    <div id="mobile-menu-wrapper" class="small-12 columns mm-menu mm-fullscreen mm-offcanvas mm-right mm-front mm-hasnavbar-top-1">
+        <div class="mm-navbar mm-navbar-top mm-navbar-top-1 mm-navbar-size-1 mm-hasbtns">
+            <a class="mm-prev mm-btn mm-hidden"></a><a class="mm-title">Menu</a>
+            <a class="mm-close mm-btn" href="#mm-0"></a>
+        </div>
+        <div class="mm-panels">
+            <div class="region region-mobile-menu mm-panel mm-opened mm-current" id="mm-1">
+                <div class="mm-navbar mm-hidden"><a class="mm-title">Menu</a></div>
+                <div id="block-views-exp-recherche-page" class="block block-views">
+
+
+                    <div class="content">
+                        <form action="/recherche" method="get" id="views-exposed-form-recherche-page" accept-charset="UTF-8">
+                            <div>
+                                <div class="views-exposed-form">
+                                    <div class="views-exposed-widgets clearfix">
+                                        <div id="edit-saisie-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                                            <div class="views-widget">
+                                                <div class="form-item form-type-textfield form-item-saisie">
+                                                    <input type="text" id="edit-saisie" name="saisie" size="30" maxlength="128" class="form-text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="views-exposed-widget views-submit-button">
+
+                                            <input type="submit" id="edit-submit-recherche" name="" value="Appliquer" class="form-submit"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="block-system-main-menu--2" class="block block-system block-menu">
+
+
+                    <div class="content">
+                        <ul class="menu mm-listview">
+                            <li class="first expanded active-trail">
+                                <a class="mm-next" href="#mm-2" data-target="#mm-2"></a><a href="http://127.0.0.1:5500/theme" class="active-trail">Thèmes</a></li>
+                            <li class="leaf"><a href="http://127.0.0.1:5500/actualites">Actualités</a></li>
+                            <li class="leaf"><a href="http://127.0.0.1:5500/quebec-economique-livres">Livres</a></li>
+                            <li class="leaf"><a href="http://127.0.0.1:5500/definitions">Définitions</a></li>
+                            <li class="last leaf"><a href="http://127.0.0.1:5500/quebec-economique">À propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="block-menu-menu-social-medias--2" class="block block-menu">
+
+
+                    <div class="content">
+                        <ul class="menu mm-listview">
+                            <li class="first leaf"><a href="http://127.0.0.1:5500/rss" class="fa fa-rss" target="_blank">RSS</a></li>
+                            <li class="last leaf"><a href="https://twitter.com/qceco" class="fa fa-twitter" target="_blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-2">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title" href="#mm-1">Thèmes</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first expanded">
+                        <a class="mm-next" href="#mm-3" data-target="#mm-3"></a><a href="http://127.0.0.1:5500/theme/activite-economique" title="Activité économique">Activité économique</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-5" data-target="#mm-5"></a><a href="http://127.0.0.1:5500/theme/marche-travail" title="Marché du travail">Marché du travail</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-6" data-target="#mm-6"></a><a href="http://127.0.0.1:5500/theme/demographie" title="Démographie">Démographie</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-7" data-target="#mm-7"></a><a href="http://127.0.0.1:5500/theme/finances-publiques" title="Finances publiques">Finances publiques</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-8" data-target="#mm-8"></a><a href="http://127.0.0.1:5500/theme/revenus-inegalites" title="Revenus et inégalités">Revenus et inégalités</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-9" data-target="#mm-9"></a><a href="http://127.0.0.1:5500/theme/education-sante" title="Éducation et santé">Éducation et santé</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-12" data-target="#mm-12"></a><a href="http://127.0.0.1:5500/theme/environnement-energie" title="Environnement et énergie">Environnement et énergie</a></li>
+                    <li class="last expanded active-trail">
+                        <a class="mm-next" href="#mm-13" data-target="#mm-13"></a><a href="http://127.0.0.1:5500/theme/regions" title="Régions" class="active-trail active">Régions</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-3">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Activité économique</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/pib-croissance-economique" title="PIB et croissance économique">PIB et croissance économique</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-4" data-target="#mm-4"></a><a href="http://127.0.0.1:5500/theme/activite-economique/secteurs-industriels" title="Secteurs industriels">Secteurs industriels</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/commerce-exterieur" title="Commerce extérieur">Commerce extérieur</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/productivite-travail" title="Productivité et travail">Productivité et travail</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/investissements" title="Investissements">Investissements</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/recherche-developpement" title="Recherche et développement">Recherche et développement</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/sante-financiere-entreprises" title="Santé financière des entreprises">Santé financière des entreprises</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/logement" title="Logement">Logement</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-4">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-3" data-target="#mm-3"></a><a class="mm-title" href="#mm-3">Secteurs industriels</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/secteurs-industriels/secteur-manufacturier" title="Secteur manufacturier">Secteur manufacturier</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/secteurs-industriels/agriculture" title="Agriculture">Agriculture</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-5">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Marché du travail</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/main-doeuvre" title="Main-d’œuvre">Main-d’œuvre</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/population-active" title="Population active">Population active</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/chomage" title="Chômage">Chômage</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/emploi" title="Emploi">Emploi</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/remuneration" title="Rémunération">Rémunération</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-6">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Démographie</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/demographie/population" title="Population">Population</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/demographie/naissances-deces" title="Naissances et décès">Naissances et décès</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/demographie/immigration" title="Immigration">Immigration</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-7">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Finances publiques</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/revenus-autonomes" title="Revenus autonomes">Revenus autonomes</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/transferts-federaux" title="Transferts fédéraux">Transferts fédéraux</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/depenses-publiques" title="Dépenses publiques">Dépenses publiques</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/service-dette" title="Service de la dette">Service de la dette</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/solde-budgetaire" title="Solde budgétaire">Solde budgétaire</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/dette-publique" title="Dette publique">Dette publique</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-8">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Revenus et inégalités</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/inegalites" title="Inégalités">Inégalités</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/repartition-revenu" title="Répartition du revenu">Répartition du revenu</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/faible-revenu" title="Faible revenu">Faible revenu</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/depenses-menages" title="Dépenses des ménages">Dépenses des ménages</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/sante-financiere-menages" title="Santé financière des ménages">Santé financière des ménages</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-9">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Éducation et santé</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first expanded">
+                        <a class="mm-next" href="#mm-10" data-target="#mm-10"></a><a href="http://127.0.0.1:5500/theme/education-sante/education" title="Éducation">Éducation</a></li>
+                    <li class="last expanded">
+                        <a class="mm-next" href="#mm-11" data-target="#mm-11"></a><a href="http://127.0.0.1:5500/theme/education-sante/sante" title="Santé">Santé</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-10">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-9" data-target="#mm-9"></a><a class="mm-title" href="#mm-9">Éducation</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/financement-leducation" title="Financement de l’éducation">Financement de l’éducation</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/resultats-scolaires" title="Résultats scolaires">Résultats scolaires</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/effectifs-scolaires" title="Effectifs scolaires">Effectifs scolaires</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/diplomation" title="Diplomation">Diplomation</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/capital-humain" title="Capital humain">Capital humain</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-11">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-9" data-target="#mm-9"></a><a class="mm-title" href="#mm-9">Santé</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/depenses-sante-financement" title="Dépenses de santé et financement">Dépenses de santé et financement</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/systeme-sante" title="Système de santé">Système de santé</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/services-sante" title="Services de santé">Services de santé</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/longevite-etat-sante" title="Longévité et état de santé">Longévité et état de santé</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/sante-regionale" title="Santé régionale">Santé régionale</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-12">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Environnement et énergie</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/environnement-energie/environnement" title="Environnement">Environnement</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/environnement-energie/energie" title="Énergie">Énergie</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-13">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-2" data-target="#mm-2"></a><a class="mm-title" href="#mm-2">Régions</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/ensemble-regions" title="Ensemble des régions">Ensemble des régions</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-14" data-target="#mm-14"></a><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes" title="Montréal et ses régions adjacentes">Montréal et ses régions adjacentes</a></li>
+                    <li class="expanded">
+                        <a class="mm-next" href="#mm-15" data-target="#mm-15"></a><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes" title="Les capitales et leurs régions adjacentes">Les capitales et leurs régions adjacentes</a></li>
+                    <li class="last expanded">
+                        <a class="mm-next" href="#mm-16" data-target="#mm-16"></a><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques" title="Les régions périphériques">Les régions périphériques</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-14">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-13" data-target="#mm-13"></a><a class="mm-title" href="#mm-13">Montréal et ses régions adjacentes</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/region-metropolitaine-montreal" title="Région métropolitaine de Montréal">Région métropolitaine de Montréal</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/montreal" title="Montréal">Montréal</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/laval" title="Laval">Laval</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/laurentides" title="Laurentides">Laurentides</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/lanaudiere" title="Lanaudière">Lanaudière</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/monteregie" title="Montérégie">Montérégie</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/region-metropolitaine-sherbrooke" title="Région métropolitaine de Sherbrooke">Région métropolitaine de Sherbrooke</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/estrie" title="Estrie">Estrie</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/centre-quebec" title="Centre-du-Québec">Centre-du-Québec</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-15">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-13" data-target="#mm-13"></a><a class="mm-title" href="#mm-13">Les capitales et leurs régions adjacentes</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/region-metropolitaine-quebec" title="Région métropolitaine de Québec">Région métropolitaine de Québec</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/capitale-nationale" title="Capitale-Nationale">Capitale-Nationale</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/chaudiere-appalaches" title="Chaudière-Appalaches">Chaudière-Appalaches</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/region-metropolitaine-gatineau" title="Région métropolitaine de Gatineau">Région métropolitaine de Gatineau</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/outaouais" title="Outaouais">Outaouais</a></li>
+                </ul>
+            </div>
+            <div class="mm-panel mm-hidden" id="mm-16">
+                <div class="mm-navbar mm-hidden">
+                    <a class="mm-btn mm-prev" href="#mm-13" data-target="#mm-13"></a><a class="mm-title" href="#mm-13">Les régions périphériques</a></div>
+                <ul class="menu mm-listview">
+                    <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/bas-saint-laurent" title="Bas-Saint-Laurent">Bas-Saint-Laurent</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/gaspesie-iles-madeleine" title="Gaspésie–Îles-de-la-Madeleine">Gaspésie–Îles-de-la-Madeleine</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/region-metropolitaine-saguenay" title="Région métropolitaine de Saguenay">Région métropolitaine de Saguenay</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/saguenay-lac-saint-jean" title="Saguenay–Lac-Saint-Jean">Saguenay–Lac-Saint-Jean</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/region-metropolitaine-trois-rivieres" title="Région métropolitaine de Trois-Rivières">Région métropolitaine de Trois-Rivières</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/mauricie" title="Mauricie">Mauricie</a></li>
+                    <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/abitibi-temiscamingue" title="Abitibi-Témiscamingue">Abitibi-Témiscamingue</a></li>
+                    <li class="last leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/cote-nord-nord-quebec" title="Côte-Nord et Nord-du-Québec">Côte-Nord et Nord-du-Québec</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="mm-0" class="mm-page mm-slideout">
+        <div id="skip-link">
+            <a href="#main-content" class="element-invisible element-focusable">Aller au contenu principal</a>
+        </div>
+        <div id="page-wrapper">
+            <div id="page">
+
+                <div id="header" style="height: 141px; overflow: visible;">
+                    <div class="section clearfix">
+                        <section class="header-first-wrapper row expanded">
+                            <div class="header-first-logo-wrapper small-12 large-3 columns">
+                                <div class="region region-header-first-logo">
+                                    <div id="block-qceco-blocks-logo-block" class="block block-qceco-blocks">
+
+
+                                        <div class="content">
+                                            <a href="https://qe.cirano.qc.ca/" class="main-logo">
+                                                <h1 class="hide-text">Régions</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-first-navigation-wrapper small-12 large-9 columns">
+                                <div class="region region-header-first-navigation">
+                                    <div id="block-system-main-menu" class="block block-system block-menu">
+
+                                        <div class="content">
+                                            <ul class="menu">
+                                                <li class="first expanded active-trail"><a href="http://127.0.0.1:5500/theme" class="active-trail">Thèmes</a>
+                                                    <ul class="menu">
+                                                        <li class="first expanded"><a href="http://127.0.0.1:5500/theme/activite-economique" title="Activité économique">Activité économique</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/pib-croissance-economique" title="PIB et croissance économique">PIB et croissance économique</a></li>
+                                                                <li class="expanded"><a href="http://127.0.0.1:5500/theme/activite-economique/secteurs-industriels" title="Secteurs industriels">Secteurs industriels</a>
+                                                                    <ul class="menu">
+                                                                        <li class="first leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/secteurs-industriels/secteur-manufacturier" title="Secteur manufacturier">Secteur manufacturier</a></li>
+                                                                        <li class="last leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/secteurs-industriels/agriculture" title="Agriculture">Agriculture</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/commerce-exterieur" title="Commerce extérieur">Commerce extérieur</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/productivite-travail" title="Productivité et travail">Productivité et travail</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/investissements" title="Investissements">Investissements</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/recherche-developpement" title="Recherche et développement">Recherche et développement</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/sante-financiere-entreprises" title="Santé financière des entreprises">Santé financière des entreprises</a></li>
+                                                                <li class="last leaf"><a href="http://127.0.0.1:5500/theme/activite-economique/logement" title="Logement">Logement</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="expanded"><a href="http://127.0.0.1:5500/theme/marche-travail" title="Marché du travail">Marché du travail</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/main-doeuvre" title="Main-d’œuvre">Main-d’œuvre</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/population-active" title="Population active">Population active</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/chomage" title="Chômage">Chômage</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/emploi" title="Emploi">Emploi</a></li>
+                                                                <li class="last leaf"><a href="http://127.0.0.1:5500/theme/marche-travail/remuneration" title="Rémunération">Rémunération</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="expanded"><a href="http://127.0.0.1:5500/theme/demographie" title="Démographie">Démographie</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/demographie/population" title="Population">Population</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/demographie/naissances-deces" title="Naissances et décès">Naissances et décès</a></li>
+                                                                <li class="last leaf"><a href="http://127.0.0.1:5500/theme/demographie/immigration" title="Immigration">Immigration</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="expanded"><a href="http://127.0.0.1:5500/theme/finances-publiques" title="Finances publiques">Finances publiques</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/revenus-autonomes" title="Revenus autonomes">Revenus autonomes</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/transferts-federaux" title="Transferts fédéraux">Transferts fédéraux</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/depenses-publiques" title="Dépenses publiques">Dépenses publiques</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/service-dette" title="Service de la dette">Service de la dette</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/solde-budgetaire" title="Solde budgétaire">Solde budgétaire</a></li>
+                                                                <li class="last leaf"><a href="http://127.0.0.1:5500/theme/finances-publiques/dette-publique" title="Dette publique">Dette publique</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="expanded"><a href="http://127.0.0.1:5500/theme/revenus-inegalites" title="Revenus et inégalités">Revenus et inégalités</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/inegalites" title="Inégalités">Inégalités</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/repartition-revenu" title="Répartition du revenu">Répartition du revenu</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/faible-revenu" title="Faible revenu">Faible revenu</a></li>
+                                                                <li class="leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/depenses-menages" title="Dépenses des ménages">Dépenses des ménages</a></li>
+                                                                <li class="last leaf"><a href="http://127.0.0.1:5500/theme/revenus-inegalites/sante-financiere-menages" title="Santé financière des ménages">Santé financière des ménages</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="expanded"><a href="http://127.0.0.1:5500/theme/education-sante" title="Éducation et santé">Éducation et santé</a>
+                                                            <ul class="menu">
+                                                                <li class="first expanded"><a href="http://127.0.0.1:5500/theme/education-sante/education" title="Éducation">Éducation</a>
+                                                                    <ul class="menu">
+                                                                        <li class="first leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/financement-leducation" title="Financement de l’éducation">Financement de l’éducation</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/resultats-scolaires" title="Résultats scolaires">Résultats scolaires</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/effectifs-scolaires" title="Effectifs scolaires">Effectifs scolaires</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/diplomation" title="Diplomation">Diplomation</a></li>
+                                                                        <li class="last leaf"><a href="http://127.0.0.1:5500/theme/education-sante/education/capital-humain" title="Capital humain">Capital humain</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="last expanded"><a href="http://127.0.0.1:5500/theme/education-sante/sante" title="Santé">Santé</a>
+                                                                    <ul class="menu">
+                                                                        <li class="first leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/depenses-sante-financement" title="Dépenses de santé et financement">Dépenses de santé et financement</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/systeme-sante" title="Système de santé">Système de santé</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/services-sante" title="Services de santé">Services de santé</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/longevite-etat-sante" title="Longévité et état de santé">Longévité et état de santé</a></li>
+                                                                        <li class="last leaf"><a href="http://127.0.0.1:5500/theme/education-sante/sante/sante-regionale" title="Santé régionale">Santé régionale</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="expanded"><a href="http://127.0.0.1:5500/theme/environnement-energie" title="Environnement et énergie">Environnement et énergie</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/environnement-energie/environnement" title="Environnement">Environnement</a></li>
+                                                                <li class="last leaf"><a href="http://127.0.0.1:5500/theme/environnement-energie/energie" title="Énergie">Énergie</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="last expanded active-trail"><a href="http://127.0.0.1:5500/theme/regions" title="Régions" class="active-trail active">Régions</a>
+                                                            <ul class="menu">
+                                                                <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/ensemble-regions" title="Ensemble des régions">Ensemble des régions</a></li>
+                                                                <li class="expanded"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes" title="Montréal et ses régions adjacentes">Montréal et ses régions adjacentes</a>
+                                                                    <ul class="menu">
+                                                                        <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/region-metropolitaine-montreal" title="Région métropolitaine de Montréal">Région métropolitaine de Montréal</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/montreal" title="Montréal">Montréal</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/laval" title="Laval">Laval</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/laurentides" title="Laurentides">Laurentides</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/lanaudiere" title="Lanaudière">Lanaudière</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/monteregie" title="Montérégie">Montérégie</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/region-metropolitaine-sherbrooke" title="Région métropolitaine de Sherbrooke">Région métropolitaine de Sherbrooke</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/estrie" title="Estrie">Estrie</a></li>
+                                                                        <li class="last leaf"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes/centre-quebec" title="Centre-du-Québec">Centre-du-Québec</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="expanded"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes" title="Les capitales et leurs régions adjacentes">Les capitales et leurs régions adjacentes</a>
+                                                                    <ul class="menu">
+                                                                        <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/region-metropolitaine-quebec" title="Région métropolitaine de Québec">Région métropolitaine de Québec</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/capitale-nationale" title="Capitale-Nationale">Capitale-Nationale</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/chaudiere-appalaches" title="Chaudière-Appalaches">Chaudière-Appalaches</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/region-metropolitaine-gatineau" title="Région métropolitaine de Gatineau">Région métropolitaine de Gatineau</a></li>
+                                                                        <li class="last leaf"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes/outaouais" title="Outaouais">Outaouais</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="last expanded"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques" title="Les régions périphériques">Les régions périphériques</a>
+                                                                    <ul class="menu">
+                                                                        <li class="first leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/bas-saint-laurent" title="Bas-Saint-Laurent">Bas-Saint-Laurent</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/gaspesie-iles-madeleine" title="Gaspésie–Îles-de-la-Madeleine">Gaspésie–Îles-de-la-Madeleine</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/region-metropolitaine-saguenay" title="Région métropolitaine de Saguenay">Région métropolitaine de Saguenay</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/saguenay-lac-saint-jean" title="Saguenay–Lac-Saint-Jean">Saguenay–Lac-Saint-Jean</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/region-metropolitaine-trois-rivieres" title="Région métropolitaine de Trois-Rivières">Région métropolitaine de Trois-Rivières</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/mauricie" title="Mauricie">Mauricie</a></li>
+                                                                        <li class="leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/abitibi-temiscamingue" title="Abitibi-Témiscamingue">Abitibi-Témiscamingue</a></li>
+                                                                        <li class="last leaf"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques/cote-nord-nord-quebec" title="Côte-Nord et Nord-du-Québec">Côte-Nord et Nord-du-Québec</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="leaf"><a href="http://127.0.0.1:5500/actualites">Actualités</a></li>
+                                                <li class="leaf"><a href="http://127.0.0.1:5500/quebec-economique-livres">Livres</a></li>
+                                                <li class="leaf"><a href="http://127.0.0.1:5500/definitions">Définitions</a></li>
+                                                <li class="last leaf"><a href="http://127.0.0.1:5500/quebec-economique">À propos</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="block-menu-menu-social-medias" class="block block-menu">
+
+
+                                        <div class="content">
+                                            <ul class="menu">
+                                                <li class="first leaf"><a href="http://127.0.0.1:5500/rss" class="fa fa-rss" target="_blank">RSS</a></li>
+                                                <li class="last leaf"><a href="https://twitter.com/qceco" class="fa fa-twitter" target="_blank">Twitter</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-first-mobile-menu-button-wrapper"><a href="#mobile-menu-wrapper" class="mobile-menu-button">Open the menu</a></div>
+
+                        </section>
+                        <div class="header-second-wrapper">
+                            <div class="header-second-inner-wrapper">
+                                <div class="row expanded">
+                                    <div class="region region-header-second">
+                                        <div id="block-qceco-blocks-slogan-block" class="block block-qceco-blocks small-12 large-6 columns">
+
+
+                                            <div class="content">
+                                                <div class="slogan">
+                                                    <p>Le portail d'information sur l'économie du Québec d'aujourd'hui</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="block-views-exp-recherche-page--2" class="block block-views" style="padding-top: 5px; padding-bottom: 5px;">
+
+
+                                            <div class="content">
+                                                <form action="/recherche" method="get" id="views-exposed-form-recherche-page" accept-charset="UTF-8">
+                                                    <div>
+                                                        <div class="views-exposed-form">
+                                                            <div class="views-exposed-widgets clearfix">
+                                                                <div id="edit-saisie-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                                                                    <div class="views-widget">
+                                                                        <div class="form-item form-type-textfield form-item-saisie">
+                                                                            <input type="text" id="edit-saisie" name="saisie" size="30" maxlength="128" class="form-text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="views-exposed-widget views-submit-button">
+                                                                    <input type="submit" id="edit-submit-recherche" name="" value="Appliquer" class="form-submit"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.section, /#header -->
+
+                <div id="main-wrapper" style="margin-top: 268px;">
+                    <div id="main" class="clearfix">
+                        <div class="row expanded">
+                            <div id="breadcrumb" class="small-12 columns">
+                                <h2 class="element-invisible">Vous êtes ici</h2>
+                                <div class="breadcrumb"><span class="inline odd first"><a href="http://127.0.0.1:5500/">Accueil</a></span> <span class="delimiter">»</span> <span class="inline even"><a href="http://127.0.0.1:5500/theme">Thèmes</a></span> <span class="delimiter">»</span>                                    <span class="inline odd last">Régions</span></div>
+                            </div>
+                        </div>
+                        <div id="content" class="column">
+                            <div class="section row expanded">
+                                <!-- <div class="large-8 small-12 columns"> -->
+                                <a id="main-content"></a>
+                                <div class="tabs-wrapper"></div>
+                                <h1 class="title" id="page-title">Régions</h1>
+                                <div class="region region-content">
+                                    <div id="block-system-main" class="block block-system">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th width="480">
+                                                        <label class="switch">
+              <input type="checkbox" id="sort_Chart1">
+              <span class="slider round"></span>
+            </label> Trier par PIB/habitant
+                                                    </th>
+                                                    <th width="340">
+                                                        Année: <select id="year_Chart" style="width: 130px"><option selected="selected">2007</option><option>2008</option><option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option></select>
+                                                    </th>
+                                                    <th width="380">
+                                                        Trier par nombre d'emplois
+                                                        <label class="switch">
+              <input type="checkbox" id="sort_Chart2" checked="checked">
+              <span class="slider round"></span>
+            </label>
+                                                    </th>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+
+
+                                        <div class="content">
+                                            <div class="view view-taxonomy-term-page view-id-taxonomy_term_page view-display-id-page view-dom-id-c30e656ffb49ead6ccfe67872d839ebf">
+
+
+
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="block-views-themes-block-theme-current" class="block block-views">
+
+
+                                <div class="content">
+                                    <div class="view view-themes view-id-themes view-display-id-block_theme_current themes-widget-children view-dom-id-e326397fd3520ffb37bdb887182b41fe" style="background-color: #00a0a0">
+
+
+
+                                        <div class="view-content">
+                                            <div class="item-list">
+                                                <ul>
+                                                    <li class="first">
+                                                        <div class="views-field views-field-name"> <span class="field-content"><a href="http://127.0.0.1:5500/theme/regions/ensemble-regions">Ensemble des régions</a></span> </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="views-field views-field-name"> <span class="field-content"><a href="http://127.0.0.1:5500/theme/regions/montreal-ses-regions-adjacentes">Montréal et ses régions adjacentes</a></span> </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="views-field views-field-name"> <span class="field-content"><a href="http://127.0.0.1:5500/theme/regions/capitales-leurs-regions-adjacentes">Les capitales et leurs régions adjacentes</a></span> </div>
+                                                    </li>
+                                                    <li class="last">
+                                                        <div class="views-field views-field-name"> <span class="field-content"><a href="http://127.0.0.1:5500/theme/regions/regions-peripheriques">Les régions périphériques</a></span> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <!-- /.section, /#content -->
+
+
+
+
+            </div>
+        </div>
+        <!-- /#main, /#main-wrapper -->
+
+
+        <section class="expanded row footer-middle">
+
+            <div class="large-6 columns">
+                <section id="footer_second">
+                    <div class="region region-footer-second">
+                        <div id="block-menu-menu-social-medias--3" class="block block-menu">
+
+
+                            <div class="content">
+                                <ul class="menu">
+                                    <li class="first leaf"><a href="http://127.0.0.1:5500/rss" class="fa fa-rss" target="_blank">RSS</a></li>
+                                    <li class="last leaf"><a href="https://twitter.com/qceco" class="fa fa-twitter" target="_blank">Twitter</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="block-qceco-blocks-footer-first-logo-block" class="block block-qceco-blocks">
+
+
+                            <div class="content">
+                                <div class="footer-first-logo"><a href="https://qe.cirano.qc.ca/" class="hide-text logo-bottom-image">Québec économique</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="footer_third">
+                    <div class="region region-footer-third">
+                        <div id="block-qceco-blocks-contact-information-block" class="block block-qceco-blocks">
+
+
+                            <div class="content">
+                                <div class="contact-information">
+                                    <a href="mailto:qceco@cirano.qc.ca">
+                                        <p class="fa fa-envelope"></p>
+                                        <p>Contactez-nous</p>
+                                    </a>
+                                    <p class="fa fa-map-marker"></p>
+                                    <p>1130 Rue Sherbrooke O #1400<br>Montréal, QC H3A 2M8<br>(514) 985-4000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="footer_fourth" class="large-6 columns narrow">
+                <div class="region region-footer-fourth">
+                    <div id="block-views-tags-block" class="block block-views">
+
+
+                        <div class="content">
+                            <div class="view view-tags view-id-tags view-display-id-block view-dom-id-f7f39fe60982a4ac81856abfce8841fc">
+
+
+
+                                <div class="view-content">
+                                    <div class="views-row views-row-1 views-row-odd views-row-first">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/accroissement-naturel">Accroissement naturel</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-2 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/ventes-residentielles">Ventes résidentielles</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-3 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/taux-demploi">Taux d’emploi</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-4 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/solde-migratoire">Solde migratoire</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-5 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/impots-taxation">Impôts et taxation</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-6 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/taux-chomage">Taux de chômage</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-7 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/depenses-programmes">Dépenses de programmes</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-8 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/pauvrete">Pauvreté</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-9 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/education">Éducation</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-10 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/salaire">Salaire</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-11 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/taux-depargne">Taux d’épargne</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-12 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/perequation">Péréquation</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-13 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/exportations">Exportations</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-14 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/taux-dactivite">Taux d’activité</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-15 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/esperance-vie">Espérance de vie</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-16 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/electricite">Électricité</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-17 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/personnel-sante">Personnel de santé</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-18 views-row-even">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/mesure-panier-consommation-mpc">Mesure du panier de consommation (MPC)</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-19 views-row-odd">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/revenu-marche">Revenu du marché</a></span> </div>
+                                    </div>
+                                    <div class="views-row views-row-20 views-row-even views-row-last">
+
+                                        <div class="views-field views-field-name"> <span class="field-content theme-tag"><a href="http://127.0.0.1:5500/mots-cles/indice-synthetique-fecondite">Indice synthétique de fécondité</a></span> </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="footer_fifth" class="row">
+            <div class="region region-footer-fifth">
+                <div id="block-qceco-blocks-footer-logo-block" class="block block-qceco-blocks">
+
+
+                    <div class="content">
+                        <div class="logo-bottom small-6 large-3 small-centered columns"><a href="http://cirano.qc.ca/" target="_blank" class="hide-text cirano-logo">Cirano</a>
+                            <p> © 2020 Cirano </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/css.css">
+    <!-- /#page, /#page-wrapper -->
+
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/d3.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/d3-tip.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/preproc.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/main.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/parallel-coordinates.js"></script>
+
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/scatter-plot-processing.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/scatter-plot-display.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/scatter-plot-time-control.js"></script>
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/scatter-plot-main.js"></script>
+
+    <script type="text/javascript" src="R%C3%A9gions%20%20%20Le%20Qu%C3%A9bec%20%C3%A9conomique_fichiers/Stacked%2520bar%2520chart.js"></script>
+
+
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+    <div id="mm-blocker" class="mm-slideout"></div>
+    <div style="position: absolute; top: 1293.18px; opacity: 0; pointer-events: none; box-sizing: border-box; z-index: 10; background: rgb(255, 255, 255) none repeat scroll 0% 0%; left: 263.532px;" class="d3-tip n"><strong>PIB total de Gaspésie-Îles-de-la-Madeleine = $2,130M</strong><br><strong>PIB/h total de Gaspésie-Îles-de-la-Madeleine = $22.47k</strong><br><strong>PIB/h secteur des services = $16.25k (72.3%)</strong><br></div>
+    <div style="position: absolute; top: 0px; opacity: 0; pointer-events: none; box-sizing: border-box;" class="d3-tip"></div>
+</body>
+
+</html>
